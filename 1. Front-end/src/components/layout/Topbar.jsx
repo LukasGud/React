@@ -1,38 +1,45 @@
-import styles from "./Topbar.module.scss";
+import { useNavigate, Link } from "react-router-dom";
+import { ROUTES } from "../../router/consts";
 import Button from "../common/Button";
+import styles from "./Topbar.module.scss";
+import Logo from "../../assets/logo.svg";
 
-const TopBar = () => {
-const links = [
+const Topbar = () => {
+  const navigate = useNavigate();
+
+  const links = [
     {
-        href: '#',
-        label: 'Home',
+      href: ROUTES.HOME,
+      label: "Home",
     },
     {
-        href: '#',
-        label: 'Services',
+      href: ROUTES.SERVICES,
+      label: "Services",
     },
     {
-        href: '#',
-        label: 'About Us',
+      href: ROUTES.ABOUT_US,
+      label: "About Us",
     },
-];
-return (
-<div className={styles.topbar}>
+  ];
+  return (
+    <header className={styles.topbar}>
       <div className={styles.leftSide}>
-        <img src="./logo.svg" alt="logo" />
+        <Link to={ROUTES.HOME}>
+          <img src={Logo} alt="logo" />
+        </Link>
         <nav className={styles.navigation}>
           {links.map((link) => (
-            <a key={link.label} href={link.href} className={styles.link}>
+            <Link key={link.label} to={link.href} className={styles.link}>
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
       </div>
       <div className={styles.rightSide}>
-        <Button>Login / Sign Up</Button>
+        <Button onClick={() => navigate(ROUTES.LOGIN)}>Login / Sign Up</Button>
       </div>
-    </div>
-);
+    </header>
+  );
 };
 
-export default TopBar;
+export default Topbar;

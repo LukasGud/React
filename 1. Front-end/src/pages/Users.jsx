@@ -7,9 +7,7 @@ function Users() {
     "https://jsonplaceholder.typicode.com/users"
   );
    
-  // neigiamos reiksmes - null, undefined, 0, "", false
-  // const users1 = data || []; // jeigu kairine puse neigiama, paima desinini varianta
-  const users = data ?? []; // jeigu kairine puse null arba undefined, paima desinini varianta
+  const users = data ?? []; 
 
   const navigate = useNavigate();
 

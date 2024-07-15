@@ -7,6 +7,7 @@ import RootLayout from "./components/layout/RootLayout";
 import ErrorPage from "./pages/ErrorPage";
 import Login from "./pages/Login";
 import SearchCategory from "./pages/SearchCategory";
+import Users from "./pages/Users";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: ROUTES.SEARCH_CATEGORY,
         element: <SearchCategory />,
+      },
+      {
+        path: ROUTES.USERS,
+        element: <Users />
       },
     ],
   },
