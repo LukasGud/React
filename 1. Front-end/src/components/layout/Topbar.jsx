@@ -1,8 +1,8 @@
-import { useNavigate, Link } from "react-router-dom";
-import { ROUTES } from "../../routes/consts";
-import Button from "../common/Button";
-import styles from "./Topbar.module.scss";
-import Logo from "../../assets/logo.svg";
+import { useNavigate, Link } from 'react-router-dom';
+import { ROUTES } from '../../routes/consts';
+import Button from '../common/Button';
+import styles from './Topbar.module.scss';
+import Logo from '../../assets/logo.svg';
 
 const Topbar = () => {
   const navigate = useNavigate();
@@ -10,15 +10,15 @@ const Topbar = () => {
   const links = [
     {
       href: ROUTES.HOME,
-      label: "Home",
+      label: 'Home',
     },
     {
       href: ROUTES.SERVICES,
-      label: "Services",
+      label: 'Services',
     },
     {
       href: ROUTES.ABOUT_US,
-      label: "About Us",
+      label: 'About Us',
     },
   ];
   return (

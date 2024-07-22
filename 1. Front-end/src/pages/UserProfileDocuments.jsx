@@ -1,7 +1,6 @@
-
-import { useContext } from "react";
-import { useParams } from "react-router-dom";
-import { ThemeContext } from "../context/ThemeContext";
+import { useContext } from 'react';
+import { useParams } from 'react-router-dom';
+import { ThemeContext } from '../context/ThemeContext';
 
 const UserProfileDocuments = () => {
   const { userId, documentId } = useParams();

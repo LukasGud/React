@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 const categorySchema = new mongoose.Schema({
   name: {
@@ -8,15 +8,15 @@ const categorySchema = new mongoose.Schema({
   bgcolor: {
     hex: {
       type: String,
-      default: "#FFFFFF",
+      default: '#FFFFFF',
     },
   },
   icon: {
     url: {
       type: String,
-      default: "http://example.com/default-icon.png",
+      default: 'http://example.com/default-icon.png',
     },
   },
 });
 
-module.exports = mongoose.model("Category", categorySchema);
+module.exports = mongoose.model('Category', categorySchema);

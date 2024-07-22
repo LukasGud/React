@@ -1,6 +1,6 @@
-import CategoryCard from "./CategoryCard";
-import { categories } from "../../consts/category";
-import styles from "./CategoryList.module.scss";
+import CategoryCard from './CategoryCard';
+import { categories } from '../../consts/category';
+import styles from './CategoryList.module.scss';
 
 const CategoryList = () => {
   return (

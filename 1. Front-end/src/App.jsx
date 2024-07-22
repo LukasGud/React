@@ -1,15 +1,15 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Home from "./pages/Home";
-import Services from "./pages/Services";
-import AboutUs from "./pages/AboutUs";
-import { ROUTES } from "./routes/consts";
-import RootLayout from "./components/layout/RootLayout";
-import ErrorPage from "./pages/ErrorPage";
-import Login from "./pages/Login";
-import SearchCategory from "./pages/SearchCategory";
-import Users from "./pages/Users";
-import { ThemeProvider } from "./context/ThemeContext";
-import UserProfile from "./pages/UserProfile";
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Home from './pages/Home';
+import Services from './pages/Services';
+import AboutUs from './pages/AboutUs';
+import { ROUTES } from './routes/consts';
+import RootLayout from './components/layout/RootLayout';
+import ErrorPage from './pages/ErrorPage';
+import Login from './pages/Login';
+import SearchCategory from './pages/SearchCategory';
+import Users from './pages/Users';
+import { ThemeProvider } from './context/ThemeContext';
+import UserProfile from './pages/UserProfile';
 
 const router = createBrowserRouter([
   {

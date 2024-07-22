@@ -1,10 +1,10 @@
-import { useState, useEffect, useContext } from "react";
-import { Link, useParams } from "react-router-dom";
-import { ThemeContext } from "../context/ThemeContext";
+import { useState, useEffect, useContext } from 'react';
+import { Link, useParams } from 'react-router-dom';
+import { ThemeContext } from '../context/ThemeContext';
 
 const documents = [
-  { id: 1, name: "First" },
-  { id: 2, name: "Second" },
+  { id: 1, name: 'First' },
+  { id: 2, name: 'Second' },
 ];
 
 const UserProfile = () => {

@@ -1,6 +1,6 @@
-import { Outlet } from "react-router-dom";
-import Topbar from "./Topbar";
-import styles from "./RootLayout.module.scss";
+import { Outlet } from 'react-router-dom';
+import Topbar from './Topbar';
+import styles from './RootLayout.module.scss';
 
 const RootLayout = () => {
   return (

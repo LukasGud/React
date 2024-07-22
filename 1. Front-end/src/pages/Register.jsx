@@ -1,13 +1,13 @@
-import { Link, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { Link, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 const styles = {};
 const ROUTES = {};
 const Register = () => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    password: "",
+    name: '',
+    email: '',
+    password: '',
   });
   const [errors, setErrors] = useState({});
 
@@ -23,20 +23,20 @@ const Register = () => {
     const formErrors = {};
 
     if (!formData.name) {
-      formErrors.name = "Field is required";
+      formErrors.name = 'Field is required';
     }
 
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!formData.email) {
-      formErrors.email = "Field is required";
+      formErrors.email = 'Field is required';
     } else if (!emailPattern.test(formData.email)) {
-      formErrors.email = "Invalid email address";
+      formErrors.email = 'Invalid email address';
     }
 
     if (!formData.password) {
-      formErrors.password = "Field is required";
+      formErrors.password = 'Field is required';
     } else if (formData.password.length < 8) {
-      formErrors.password = "Password must be at least 8 characters";
+      formErrors.password = 'Password must be at least 8 characters';
     }
 
     return formErrors;
@@ -55,13 +55,7 @@ const Register = () => {
       <form onSubmit={handleSubmit} className={styles.form}>
         <h2 className={styles.title}>Register</h2>
         {errors.name && <p className={styles.error}>{errors.name}</p>}
-        <input
-          type="text"
-          name="name"
-          placeholder="Name"
-          value={formData.name}
-          onChange={handleChange}
-        />
+        <input type="text" name="name" placeholder="Name" value={formData.name} onChange={handleChange} />
         {errors.name && <p className={styles.error}>{errors.name}</p>}
         <input
           type="email"

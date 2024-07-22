@@ -1,13 +1,10 @@
-
-import { useNavigate, Link } from "react-router-dom";
-import useFetch from "../hooks/useHook";
+import { useNavigate, Link } from 'react-router-dom';
+import useFetch from '../hooks/useHook';
 
 function Users() {
-  const { data, loading, error } = useFetch(
-    "https://jsonplaceholder.typicode.com/users"
-  );
-   console.log(data);
-  const users = data ?? []; 
+  const { data, loading, error } = useFetch('https://jsonplaceholder.typicode.com/users');
+  console.log(data);
+  const users = data ?? [];
 
   const navigate = useNavigate();
 
@@ -22,7 +19,7 @@ function Users() {
   return (
     <div>
       <h1>Users</h1>
-      <button onClick={() => navigate("/")}>Go back to home</button>
+      <button onClick={() => navigate('/')}>Go back to home</button>
       <ul>
         {users.map((user) => (
           <li key={user.id}>

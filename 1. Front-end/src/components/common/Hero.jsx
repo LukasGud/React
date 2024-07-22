@@ -1,7 +1,7 @@
-import { CiSearch } from "react-icons/ci";
-import Button from "./Button";
-import SearchInput from "./SearchInput";
-import styles from "./Hero.module.scss";
+import { CiSearch } from 'react-icons/ci';
+import Button from './Button';
+import SearchInput from './SearchInput';
+import styles from './Hero.module.scss';
 
 const Hero = () => {
   return (
@@ -11,9 +11,7 @@ const Hero = () => {
         <br />
         Near You
       </h1>
-      <p className={styles.subtitle}>
-        Explore Best Home Service & Repair near you
-      </p>
+      <p className={styles.subtitle}>Explore Best Home Service & Repair near you</p>
       <div className={styles.searchContainer}>
         <SearchInput />
         <Button rounded>
