@@ -6,7 +6,7 @@ function Users() {
   const { data, loading, error } = useFetch(
     "https://jsonplaceholder.typicode.com/users"
   );
-   
+   console.log(data);
   const users = data ?? []; 
 
   const navigate = useNavigate();

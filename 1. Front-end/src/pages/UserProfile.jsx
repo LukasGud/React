@@ -4,7 +4,7 @@ import { ThemeContext } from "../context/ThemeContext";
 
 const documents = [
   { id: 1, name: "First" },
-  { id: 2, name: "Seccond" },
+  { id: 2, name: "Second" },
 ];
 
 const UserProfile = () => {

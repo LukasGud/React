@@ -4,5 +4,6 @@ export const ROUTES = {
     ABOUT_US: "/about-us",
     LOGIN: "/login",
     SEARCH_CATEGORY: "/search/:category",
-    USERS: "/users"
+    USERS: "/users",
+    USER_PROFILE: "/user"
   };

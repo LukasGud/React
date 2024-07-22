@@ -1,11 +1,11 @@
 export const businesses = [
     {
       _id: "662e9aabc68c09aa94544548",
-      name: "Išsivalyk pats",
+      name: "Test1",
       about: "Description One",
-      address: "Kauno g. 27, Vilnius",
+      address: "Miestas1",
       category: "cleaning",
-      contactPerson: "Tadas Gedvilas",
+      contactPerson: "Person",
       email: "email@example.com",
       images: [
         {
@@ -15,11 +15,11 @@ export const businesses = [
     },
     {
       _id: "662e9ac5c68c09aa94544548",
-      name: "UAB Valymas",
+      name: "Test2",
       about: "Description Two",
-      address: "Aukštaičių al. 27, Klaipėda",
+      address: "Miestas2",
       category: "cleaning",
-      contactPerson: "Regina Kazlauskienė",
+      contactPerson: "Person2",
       email: "email2@example.com",
       images: [
         {
@@ -29,11 +29,11 @@ export const businesses = [
     },
     {
       _id: "662e9ac5c68c09aa94544549",
-      name: "Moki veži",
+      name: "Test3",
       about: "Description Two",
-      address: "Žemaičių al. 27, Klaipėda",
+      address: "Miestas3",
       category: "shifting",
-      contactPerson: "Darius Standys",
+      contactPerson: "Person3",
       email: "email2@example.com",
       images: [
         {
@@ -43,10 +43,10 @@ export const businesses = [
     },
     {
       _id: "662ea59ed296417abaedfdfc",
-      name: "Elektrikas į namus",
-      address: "Maisto g. 17, Vilnius",
+      name: "Test4",
+      address: "Miestas4",
       category: "electric",
-      contactPerson: "Rokas Andreikėnas",
+      contactPerson: "Person4",
       email: "food@gmail.com",
       images: [
         {

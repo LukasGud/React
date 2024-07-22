@@ -1,17 +1,13 @@
-import { useEffect } from "react";
-import useLocalStorage from "../hooks/useLocalStorage";
+
 
 const Services = () => {
-  const [name, setName] = useLocalStorage("name", "");
+  
 
-  useEffect(() => {
-    console.log(name);
-  }, [name]);
+
 
   return (
     <div>
-      <h1>My name is {name}</h1>
-      Services <button onClick={() => setName("Lukas")}>Click</button>
+      <h1>Services Coming Soon</h1> 
     </div>
   );
 };
