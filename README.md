@@ -19,7 +19,7 @@ Server Build      | yarn
 
 ### Backend
 - Install yarn
-- - Go to your project folder 'back-end' from your terminal
+- Go to your project folder 'back-end' from your terminal
 - run 'yarn run dev'
 
 ### Frontend
