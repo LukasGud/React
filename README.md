@@ -26,5 +26,4 @@ Server Build      | yarn
 - Go to your project folder 'front-end' from your terminal
 - Run: `npm install`
 - After install, run: `npm run dev` 
--
 
